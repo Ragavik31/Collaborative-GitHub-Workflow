@@ -106,3 +106,10 @@ For any questions or customization requests, please refer to the code comments o
 ---
 
 **Note**: This is a frontend-only implementation focused on the public-facing hotel website. All functionality is handled client-side with sample data for demonstration purposes.
+
+
+## 📌 Additional Notes
+
+- Ensure all files are opened using a live server for best performance  
+- Update image paths if deploying to a different environment  
+- Customize room data in JavaScript files for real-world usage  
