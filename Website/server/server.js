@@ -19,8 +19,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files from the inner Website directory
-app.use(express.static(path.join(__dirname, '..', 'Website')));
+// Serve static files from the outer layer
+app.use(express.static(path.join(__dirname, '..')));
 
 // API Routes
 app.use('/api/auth', authRoutes);
@@ -29,12 +29,12 @@ app.use('/api/contact', contactRoutes);
 
 // Serve the frontend
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'Website', 'home.html'));
+  res.sendFile(path.join(__dirname, '..', 'home.html'));
 });
 
 // Catch-all route for other pages
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'Website', 'home.html'));
+  res.sendFile(path.join(__dirname, '..', 'home.html'));
 });
 
 // Error handling middleware
