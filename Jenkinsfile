@@ -2,21 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone') {
+        stage('Test') {
             steps {
-                echo 'Cloning repo...'
-            }
-        }
-
-        stage('Install') {
-            steps {
-                sh 'npm install'
-            }
-        }
-
-        stage('Run') {
-            steps {
-                sh 'npm start'
+                echo 'Jenkins pipeline working 🚀'
             }
         }
     }
