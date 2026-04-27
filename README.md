@@ -1,1 +1,1 @@
-Testing Jenkins trigger
+Testing Jenkins trigger using GitHub webhooks
